@@ -1,0 +1,8 @@
+({:full-name "test.main"
+ :ns-name   "test.main"
+ :sanitized "test/main"
+ :name      "test.main"
+ :modules   {:root         "modules"
+             :repositories [{:url  "https://github.com/kit-clj/modules.git"
+                             :tag  "master"
+                             :name "kit-modules"}]}}
