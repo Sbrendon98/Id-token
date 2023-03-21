@@ -2,6 +2,8 @@
            "resources"]
 
  :deps    {org.clojure/clojure             {:mvn/version "1.11.1"}
+           org.clojure/clojurescript       {:mvn/version "1.11.54"}
+           reagent/reagent                 {:mvn/version "1.2.0"}
 
            ;; Routing
            metosin/reitit                  {:mvn/version "0.5.18"}
