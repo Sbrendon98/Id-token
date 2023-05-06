@@ -11,7 +11,8 @@
 
     ;; Routes
     [test.main.web.routes.api]
-    )
+    
+    [test.main.web.routes.pages])
   (:gen-class))
 
 ;; log uncaught exceptions in threads

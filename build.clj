@@ -1,6 +1,10 @@
 (ns build
   (:require [clojure.string :as string]
-            [clojure.tools.build.api :as b]))
+            [clojure.tools.build.api :as b] 
+    [babashka.fs :refer [copy-tree]] 
+    [babashka.process :refer [shell]])) 
+
+ (defn build-cljs [] (println "npx shadow-cljs release app...") (let [{:keys [exit], :as s} (shell "npx shadow-cljs release app")] (when-not (zero? exit) (throw (ex-info "could not compile cljs" s))) (copy-tree "target/classes/cljsbuild/public" "target/classes/public")))
 
 (def lib 'test.main)
 (def main-cls (string/join "." (filter some? [(namespace lib) (name lib) "core"])))
@@ -30,7 +34,8 @@
   (println "Compiling Clojure...")
   (b/compile-clj {:basis basis
                   :src-dirs ["src/clj" "resources" "env/prod/resources" "env/prod/clj"]
-                  :class-dir class-dir})
+                  :class-dir class-dir}) 
+  (build-cljs)
   (println "Making uberjar...")
   (b/uber {:class-dir class-dir
            :uber-file uber-file
