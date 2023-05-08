@@ -1,15 +1,20 @@
 (ns test.main.core
-    (:require
-      [reagent.core :as r]
-      [reagent.dom :as d]))
+  (:require
+   [reagent.core :as r]
+   [reagent.dom :as d]
+   ["react-router-dom" :as router]
+   [re-frame :as re-frame]
+   [login-comp :as log-com]
+   ))
 
 ;; -------------------------
 ;; Views
 
-(defn home-page [] 
+(defn home-page []
   [:div [:h2 "Welcome to Reagent!"]
    [:div.main [:h1 "FUCKING FINALLY!"]]])
 
+(defn root [])
 ;; -------------------------
 ;; Initialize app
 

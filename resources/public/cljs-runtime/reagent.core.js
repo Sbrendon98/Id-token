@@ -20,8 +20,8 @@ reagent.core.is_client = reagent.impl.util.is_client;
  *   ```
  */
 reagent.core.create_element = (function reagent$core$create_element(var_args){
-var G__22734 = arguments.length;
-switch (G__22734) {
+var G__22710 = arguments.length;
+switch (G__22710) {
 case 1:
 return reagent.core.create_element.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -88,15 +88,15 @@ return cljs.core.apply.cljs$core$IFn$_invoke$arity$5(module$node_modules$react$i
 }));
 
 /** @this {Function} */
-(reagent.core.create_element.cljs$lang$applyTo = (function (seq22730){
-var G__22731 = cljs.core.first(seq22730);
-var seq22730__$1 = cljs.core.next(seq22730);
-var G__22732 = cljs.core.first(seq22730__$1);
-var seq22730__$2 = cljs.core.next(seq22730__$1);
-var G__22733 = cljs.core.first(seq22730__$2);
-var seq22730__$3 = cljs.core.next(seq22730__$2);
+(reagent.core.create_element.cljs$lang$applyTo = (function (seq22699){
+var G__22700 = cljs.core.first(seq22699);
+var seq22699__$1 = cljs.core.next(seq22699);
+var G__22701 = cljs.core.first(seq22699__$1);
+var seq22699__$2 = cljs.core.next(seq22699__$1);
+var G__22702 = cljs.core.first(seq22699__$2);
+var seq22699__$3 = cljs.core.next(seq22699__$2);
 var self__5754__auto__ = this;
-return self__5754__auto__.cljs$core$IFn$_invoke$arity$variadic(G__22731,G__22732,G__22733,seq22730__$3);
+return self__5754__auto__.cljs$core$IFn$_invoke$arity$variadic(G__22700,G__22701,G__22702,seq22699__$3);
 }));
 
 (reagent.core.create_element.cljs$lang$maxFixedArity = (3));
@@ -106,8 +106,8 @@ return self__5754__auto__.cljs$core$IFn$_invoke$arity$variadic(G__22731,G__22732
  *   unchanged if it is not a vector.
  */
 reagent.core.as_element = (function reagent$core$as_element(var_args){
-var G__22736 = arguments.length;
-switch (G__22736) {
+var G__22734 = arguments.length;
+switch (G__22734) {
 case 1:
 return reagent.core.as_element.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -150,8 +150,8 @@ return reagent.impl.template.adapt_react_class(c);
  *   the component, converted to a map.
  */
 reagent.core.reactify_component = (function reagent$core$reactify_component(var_args){
-var G__22738 = arguments.length;
-switch (G__22738) {
+var G__22749 = arguments.length;
+switch (G__22749) {
 case 1:
 return reagent.core.reactify_component.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -223,8 +223,8 @@ return reagent.impl.component.reactify_component(c,compiler);
  *   React built-in static methods or properties are automatically defined as statics.
  */
 reagent.core.create_class = (function reagent$core$create_class(var_args){
-var G__22740 = arguments.length;
-switch (G__22740) {
+var G__22751 = arguments.length;
+switch (G__22751) {
 case 1:
 return reagent.core.create_class.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -320,8 +320,8 @@ return cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$3(reagent.core.state_ato
  *   re-rendered, even is their arguments have not changed.
  */
 reagent.core.force_update = (function reagent$core$force_update(var_args){
-var G__22746 = arguments.length;
-switch (G__22746) {
+var G__22753 = arguments.length;
+switch (G__22753) {
 case 1:
 return reagent.core.force_update.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -392,8 +392,8 @@ return reagent.impl.component.get_argv(this$);
  *   - Collections of previous types
  */
 reagent.core.class_names = (function reagent$core$class_names(var_args){
-var G__22755 = arguments.length;
-switch (G__22755) {
+var G__22758 = arguments.length;
+switch (G__22758) {
 case 0:
 return reagent.core.class_names.cljs$core$IFn$_invoke$arity$0();
 
@@ -445,13 +445,13 @@ return cljs.core.apply.cljs$core$IFn$_invoke$arity$4(reagent.impl.util.class_nam
 }));
 
 /** @this {Function} */
-(reagent.core.class_names.cljs$lang$applyTo = (function (seq22752){
-var G__22753 = cljs.core.first(seq22752);
-var seq22752__$1 = cljs.core.next(seq22752);
-var G__22754 = cljs.core.first(seq22752__$1);
-var seq22752__$2 = cljs.core.next(seq22752__$1);
+(reagent.core.class_names.cljs$lang$applyTo = (function (seq22755){
+var G__22756 = cljs.core.first(seq22755);
+var seq22755__$1 = cljs.core.next(seq22755);
+var G__22757 = cljs.core.first(seq22755__$1);
+var seq22755__$2 = cljs.core.next(seq22755__$1);
 var self__5754__auto__ = this;
-return self__5754__auto__.cljs$core$IFn$_invoke$arity$variadic(G__22753,G__22754,seq22752__$2);
+return self__5754__auto__.cljs$core$IFn$_invoke$arity$variadic(G__22756,G__22757,seq22755__$2);
 }));
 
 (reagent.core.class_names.cljs$lang$maxFixedArity = (2));
