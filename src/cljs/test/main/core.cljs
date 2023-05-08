@@ -2,9 +2,8 @@
   (:require
    [reagent.core :as r]
    [reagent.dom :as d]
-   ["react-router-dom" :as router]
-   [re-frame :as re-frame]
-   [login-comp :as log-com]
+   [re-frame.core :as re-frame]
+   [test.main.login :refer [login-comp]]
    ))
 
 ;; -------------------------
@@ -13,8 +12,6 @@
 (defn home-page []
   [:div [:h2 "Welcome to Reagent!"]
    [:div.main [:h1 "FUCKING FINALLY!"]]])
-
-(defn root [])
 ;; -------------------------
 ;; Initialize app
 
@@ -22,4 +19,5 @@
   (d/render [home-page] (.getElementById js/document "app")))
 
 (defn ^:export ^:dev/once init! []
+  (re-frame/dispatch-sync [:initialize-db])
   (mount-root))
